@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Login in system </title>
+</head>
+<body>
+
+    <div>
+        <h3> Please, sign in. </h3>
+    </div>
+
+    <div>
+        <form method="post" action="/login.html" th:action="@{/login}">
+
+            <label for="user-login"> Your e-mail or telephone number </label>
+            <input type="text" name="user-login" id="user-login" />
+
+            <label for="user-password"> Your password </label>
+            <input type="password" name="user-password" id="user-password" />
+
+            <input type="submit" name="login-submit" id="login-submit" />
+
+        </form>
+    </div>
+</body>
+</html>

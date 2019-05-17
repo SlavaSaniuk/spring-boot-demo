@@ -26,6 +26,7 @@
   </parent>
 
   <dependencies>
+
     <!-- Spring boot dependencies -->
     <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
     <dependency>
@@ -40,9 +41,12 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-tomcat</artifactId>
         </exclusion>
+         <exclusion>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-logging</artifactId>
+         </exclusion>
       </exclusions>
     </dependency>
-
     <!-- Apache Tomcat application server -->
     <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
     <dependency>
@@ -63,6 +67,14 @@
       </exclusions>
     </dependency>
 
+    <!-- Logging dependencies -->
+    <!-- Slf4j logging framework with log4j implementation -->
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.25</version>
+    </dependency>
 
   </dependencies>
 

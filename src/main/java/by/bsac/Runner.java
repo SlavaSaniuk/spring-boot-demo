@@ -1,6 +1,8 @@
 package by.bsac;
 
 import by.bsac.configuration.WebConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -11,6 +13,9 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  */
 @SpringBootApplication
 public class Runner extends SpringBootServletInitializer {
+
+    //Logger
+    private static final Logger LOGGER = LoggerFactory.getLogger("Spring boot main class");
 
     /**
      * Configure the application. Normally all you would need to do is to add sources
